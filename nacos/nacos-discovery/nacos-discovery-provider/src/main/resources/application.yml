@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: nacos-discovery-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.0.104:18848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 8081
+---
+spring:
+  config:
+    activate:
+      on-profile: provider2
+server:
+  port: 8082
+---
+spring:
+  config:
+    activate:
+      on-profile: provider3
+server:
+  port: 8083

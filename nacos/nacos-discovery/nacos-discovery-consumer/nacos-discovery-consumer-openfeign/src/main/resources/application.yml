@@ -1,0 +1,9 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: nacos-discovery-consumer-openfeign
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.0.104:18848

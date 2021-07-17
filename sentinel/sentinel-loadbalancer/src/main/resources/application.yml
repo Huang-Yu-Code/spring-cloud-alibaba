@@ -1,0 +1,17 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: sentinel-ribbon
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.0.104:18848
+    sentinel:
+      transport:
+        dashboard: 192.168.0.104:18080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

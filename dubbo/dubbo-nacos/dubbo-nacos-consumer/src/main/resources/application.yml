@@ -1,0 +1,9 @@
+server:
+  port: 8084
+dubbo:
+  application:
+    name: dubbo-nacos-consumer
+  registry:
+    address: nacos://192.168.0.102:8848
+  protocol:
+    name: dubbo

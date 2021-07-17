@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentinel分布式事务Demo</title>
+</head>
+<body>
+<form action="/purchase" method="post">
+    <table border="1" align="center">
+        <tr>
+            <th>属性</th>
+            <th>值</th>
+        </tr>
+        <tr>
+            <td>userId</td>
+            <td>
+                <label>
+                    正常
+                    <input type="radio" name="userId" value="1001" checked="checked">
+                </label>
+                <label>
+                    异常
+                    <input type="radio" name="userId" value="1002">
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>commodityCode</td>
+            <td><input type="text" name="commodityCode" value="2001" readonly></td>
+        </tr>
+        <tr>
+            <td>count</td>
+            <td><input type="text" name="count" value="10"></td>
+        </tr>
+        <tr>
+            <td>操作</td>
+            <td><input type="submit" value="下单"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

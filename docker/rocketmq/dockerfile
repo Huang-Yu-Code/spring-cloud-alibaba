@@ -1,0 +1,8 @@
+FROM openjdk:8
+ADD rocketmq-all-4.9.0-bin-release.zip /
+RUN ["unzip", "rocketmq-all-4.9.0-bin-release.zip"]
+RUN ["rm", "-rf", "rocketmq-all-4.9.0-bin-release.zip"]
+EXPOSE 9876
+WORKDIR /rocketmq-all-4.9.0-bin-release/bin
+ENTRYPOINT ["nohup", "sh","mqnamesrv &","sh","mqbroker"]
+CMD ["-n localhost:9876 &"]

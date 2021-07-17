@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: dubbo-zookeeper-provider
+dubbo:
+  scan:
+    base-packages: com.demo.dubbo.zookeeper.provider.service
+  registry:
+    address: zookeeper://192.168.0.102:2181
+    timeout: 10000
+  config-center:
+    timeout: 10000
+  protocol:
+    name: dubbo
+    port: 20880
