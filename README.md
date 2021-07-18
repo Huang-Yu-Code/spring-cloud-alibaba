@@ -79,11 +79,13 @@ Version: 20.10.6
 
 ### docker-compose
 
-version: 1.29.1
+version: 1.29.2
 
 windows系统不需要单独安装
 
 [下载地址](https://github.com/docker/compose/releases)
+
+[示例](./docker)
 
 ---
 
@@ -95,7 +97,9 @@ windows系统不需要单独安装
 
 [参考文档](https://dubbo.apache.org/zh/docs/)
 
-[示例](./dubbo/README.md)Version: 2.7.8
+Version: 2.7.8
+
+[示例](./dubbo)
 
 ## Nacos
 
@@ -107,7 +111,9 @@ windows系统不需要单独安装
 
 [参考文档](https://nacos.io/zh-cn/docs/what-is-nacos.html)
 
-[示例](./nacos/README.md)Version: 2.0.2
+Version: 2.0.2
+
+[示例](./nacos)
 
 ## Sentinel
 
@@ -119,11 +125,13 @@ windows系统不需要单独安装
 
 [参考文档](https://sentinelguard.io/zh-cn/docs/introduction.html)
 
-[示例](./sentinel/README.md)Version: 1.8.2
+Version: 1.8.2
+
+[示例](./sentinel)
 
 ## RocketMQ
 
-[示例](./nacos/README.md)
+[示例](./nacos)
 
 ## Seata
 
@@ -133,4 +141,6 @@ windows系统不需要单独安装
 
 [下载地址](http://seata.io/zh-cn/blog/download.html)
 
-[示例](./seata/README.md)Version: 1.4.2
+Version: 1.4.2
+
+[示例](./seata)

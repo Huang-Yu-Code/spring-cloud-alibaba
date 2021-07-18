@@ -18,7 +18,7 @@
 
 本示例环境搭建使用Docker搭建
 
-[docker-compose.yml](../../docker/docker-compose.yml)
+[docker-compose.yml](../docker/docker-compose.yml)
 
 ```yaml
 version: "3.9"
@@ -65,7 +65,7 @@ services:
     - 自动初始化本示例所需数据库，执行据库整合脚本文件[demo-all-in-one.sql](../../docker/seata/db/demo-all-in-one.sql)(
       包括了Nacos和Seata所需的数据库，后续无需任何操作)
 
-[account.sql](../../docker/seata/db/account.sql)
+[account.sql](../docker/seata/db/account.sql)
 
 ```sql
 DROP DATABASE IF EXISTS db_account;
@@ -87,7 +87,7 @@ INSERT INTO account_tbl (id, user_id, money)
 VALUES (2, '1002', 10000);
 ```
 
-[order.sql](../../docker/seata/db/order.sql)
+[order.sql](../docker/seata/db/order.sql)
 
 ```sql
 DROP DATABASE IF EXISTS db_order;
@@ -106,7 +106,7 @@ CREATE TABLE `order_tbl`
   DEFAULT CHARSET = utf8;
 ```
 
-[storage.sql](../../docker/seata/db/seata.sql)
+[storage.sql](../docker/seata/db/seata.sql)
 
 ```sql
 DROP DATABASE IF EXISTS db_storage;
@@ -132,7 +132,7 @@ VALUES (1, '2001', 1000);
 
 - Version: 2.0.2
 
-1. 建立数据库,执行[nacos.sql](../../docker/nacos/db/nacos.sql)数据库脚本文件。
+1. 建立数据库,执行[nacos.sql](../docker/nacos/db/nacos.sql)数据库脚本文件。
 2. 修改Docker容器启动参数:
     - `MYSQL_SERVICE_HOST`:数据库地址
     - `MYSQL_SERVICE_PORT`:端口
@@ -144,9 +144,9 @@ VALUES (1, '2001', 1000);
 
 - Version: 1.4.0
 
-1. 建立数据库，执行[seata.sql](../../docker/seata/db/seata.sql)数据库脚本。
+1. 建立数据库，执行[seata.sql](../docker/seata/db/seata.sql)数据库脚本。
 
-2. 修改[registry.yml](../../docker/seata/conf/registry.yml)
+2. 修改[registry.yml](../docker/seata/conf/registry.yml)
     - `registry.type`: 注册中心类型
     - `serverAddr`: 注册中心地址
     - `config.type`: 配置中心类型
@@ -169,7 +169,7 @@ config:
     name: file:/root/seata-config/file.yml
 ```
 
-3. 修改[file.yml](../../docker/seata/conf/file.yml)
+3. 修改[file.yml](../docker/seata/conf/file.yml)
     - `datasource`:数据源类型
     - `dbType`:数据库类型
     - `driverClassName`:数据库驱动
