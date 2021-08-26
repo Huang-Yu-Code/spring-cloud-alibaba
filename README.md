@@ -8,7 +8,7 @@ Version: 1.8
 
 [下载地址](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 
-### Maven
+Maven
 
 Version: 3.8.1
 
@@ -18,7 +18,7 @@ Version: 3.8.1
 
 [仓库](https://mvnrepository.com/)
 
-#### Spring-Boot
+Spring-Boot
 
 Version: 2.5.2
 
@@ -33,7 +33,7 @@ Version: 2.5.2
 </dependency>
 ```
 
-#### Spring-cloud
+Spring-cloud
 
 Version: 2020.0.3
 
@@ -48,7 +48,7 @@ Version: 2020.0.3
 </dependency>
 ```
 
-#### Spring-Cloud-Alibaba
+Spring-Cloud-Alibaba
 
 Version: 2021.1
 
@@ -63,7 +63,7 @@ Version: 2021.1
 </dependency>
 ```
 
-### Docker
+Docker
 
 System: Ubuntu20.04.1
 
@@ -77,7 +77,7 @@ Version: 20.10.6
 
 [Docker Hub](https://hub.docker.com/)
 
-### docker-compose
+docker-compose
 
 version: 1.29.2
 
