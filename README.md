@@ -85,7 +85,7 @@ windows系统不需要单独安装
 
 [下载地址](https://github.com/docker/compose/releases)
 
-[示例](./docker)
+[示例](documents/docker)
 
 ---
 

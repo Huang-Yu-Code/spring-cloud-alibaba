@@ -1,3 +1,6 @@
+# docker-compose说明
+
+```yaml
 version: "3.9"
 
 services:
@@ -23,12 +26,12 @@ services:
       - 8848:8848
 
   sentinel:
-    build: ./sentinel
+    build: sentinel
     ports:
       - 18080:8080
 
   rokcetmq:
-    build: ./rocketmq
+    build: rocketmq
     ports:
       - 9876:9876
 
@@ -60,3 +63,4 @@ services:
       - admin.registry.address=zookeeper://zookeeper:2181
       - admin.config-center=zookeeper://zookeeper:2181
       - admin.metadata-report.address=zookeeper://zookeeper:2181
+```

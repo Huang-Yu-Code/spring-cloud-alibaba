@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 @RestController
 public class ConsumerController {
 
-    final static String URL = "http://nacos-discovery-provider/";
+    static final String URL = "http://nacos-discovery-provider/";
 
     @Resource
     private RestTemplate restTemplate;

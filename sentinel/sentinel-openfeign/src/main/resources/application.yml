@@ -6,10 +6,10 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.0.104:18848
+        server-addr: server:8848
     sentinel:
       transport:
-        dashboard: 192.168.0.104:18080
+        dashboard: server:18080
       datasource:
         ds1:
           nacos:
